@@ -12,6 +12,7 @@ import pl.to1maszproblem.Main;
 import pl.to1maszproblem.utils.TextUtil;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -90,22 +91,12 @@ public class CustomEnchantCommand implements TabExecutor {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         if (args.length == 1) {
-            List<String> argscmd = new ArrayList<>();
-            argscmd.add("protection");
-            argscmd.add("sharpness");
-            argscmd.add("unbreaking");
-            argscmd.add("fire_aspect");
-            argscmd.add("fortune");
-            argscmd.add("efficiency");
-            return argscmd;
+            List<String> argument = Arrays.asList("protection", "sharpness", "unbreaking","fire_aspect", "fortune", "efficiency");
+            return argument;
         }
         if (args.length == 2) {
-            List<String> argscmd = new ArrayList<>();
-            argscmd.add("1");
-            argscmd.add("10");
-            argscmd.add("50");
-            argscmd.add("100");
-            return  argscmd;
+            List<String> argument = Arrays.asList("1", "10", "50","100");
+            return argument;
         }
         return null;
     }
