@@ -1,0 +1,9 @@
+enchantment:
+  lore:
+    protection: "&x&a&d&2&e&f&b[❤] Ochrona [amount]"
+    sharpness: "&x&F&F&2&C&2&C[\uD83E\uDE93] Ostrość [amount]"
+    unbreaking: "&x&2&7&a&2&f&b[\uD83D\uDEE1] Niezniszczalność [amount]"
+    fortune: "&x&5&8&f&b&1&f[☘] Szczęście [amount]"
+    efficiency: "&x&f&b&c&e&3&1[⛏] Wydajność [amount]"
+    fire_aspect: "&x&F&2&6&3&2&5[\uD83D\uDD25] Zaklęty Ogień [amount]"
+  permission: ""
