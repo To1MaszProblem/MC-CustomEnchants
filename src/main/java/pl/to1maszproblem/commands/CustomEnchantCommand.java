@@ -90,10 +90,7 @@ public class CustomEnchantCommand implements TabExecutor {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-        if (args.length == 1) {
-            List<String> argument = Arrays.asList("protection", "sharpness", "unbreaking","fire_aspect", "fortune", "efficiency");
-            return argument;
-        }
+        if (args.length == 1) return List.of("protection", "sharpness", "unbreaking","fire_aspect", "fortune", "efficiency");
         if (args.length == 2) {
             List<String> argument = Arrays.asList("1", "10", "50","100");
             return argument;
