@@ -6,4 +6,4 @@ enchantment:
     fortune: "&x&5&8&f&b&1&f[☘] Szczęście [amount]"
     efficiency: "&x&f&b&c&e&3&1[⛏] Wydajność [amount]"
     fire_aspect: "&x&F&2&6&3&2&5[\uD83D\uDD25] Zaklęty Ogień [amount]"
-  permission: ""
+  permission: "afterowe.customenchant"

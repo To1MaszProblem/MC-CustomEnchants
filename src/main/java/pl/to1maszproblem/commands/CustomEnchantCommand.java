@@ -12,7 +12,6 @@ import pl.to1maszproblem.Main;
 import pl.to1maszproblem.utils.TextUtil;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -22,6 +21,7 @@ public class CustomEnchantCommand implements TabExecutor {
         if (sender instanceof Player player) {
             if (!player.hasPermission(Objects.requireNonNull(Main.getInstance().getConfig().getString("enchantment.permission")))) {
                 player.sendMessage(TextUtil.fixColor("&cNie posiadasz uprawnień do tej komendy"));
+                return false;
             }
             if (args.length < 2) {
                 player.sendMessage(TextUtil.fixColor("&7Poprawne użycie: &a/customenchant [typ] [poziom]"));
@@ -90,11 +90,8 @@ public class CustomEnchantCommand implements TabExecutor {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-        if (args.length == 1) return List.of("protection", "sharpness", "unbreaking","fire_aspect", "fortune", "efficiency");
-        if (args.length == 2) {
-            List<String> argument = Arrays.asList("1", "10", "50","100");
-            return argument;
-        }
+        if (args.length == 1) return List.of("protection", "sharpness", "unbreaking", "fire_aspect", "fortune", "efficiency");
+        if (args.length == 2) return List.of("1", "10", "50","100");
         return null;
     }
     private boolean isInt(String input) {
