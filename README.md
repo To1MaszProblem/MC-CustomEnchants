@@ -7,4 +7,4 @@ Plugin na customowe enchanty od 1.16.5-1.19
 
 
 
-[**Pobierz plik .jar**](MC-CustomEnchants-1.0-SNAPSHOT.jar)
+[**Pobierz plik .jar**](MC-CustomEnchants-1.0.jar)
